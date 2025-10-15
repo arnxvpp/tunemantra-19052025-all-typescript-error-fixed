@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" id="main" dir="ltr" data-beasties-container>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <title>TuneMantra - Music Distribution Platform</title>
+  <base href="/">
+  <meta content="noindex, nofollow" name="robots">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="icon">
+  <link as="style" crossorigin href="./splash.css" rel="stylesheet preload">
+  <style>
+    @font-face {
+      font-family: 'Material Symbols Outlined';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v226/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
+    }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+  <style>
+    @layer primeng {
+      @-webkit-keyframes p-fadein {
+        0% { opacity: 0 }
+        to { opacity: 1 }
+      }
+      @-webkit-keyframes p-icon-spin {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0)
+        }
+        to {
+          -webkit-transform: rotate(359deg);
+          transform: rotate(359deg)
+        }
+      }
+      @-webkit-keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+          opacity: 0
+        }
+        to {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1
+        }
+      }
+      @-webkit-keyframes scale-in-center {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          opacity: 1
+        }
+        to {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1
+        }
+      }
+      @-webkit-keyframes scale-out-center {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1
+        }
+        to {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          opacity: 1
+        }
+      }
+    }
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    html {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    body {
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      font-feature-settings: "liga", "kern";
+      overflow: hidden;
+    }
+    @media screen and (max-width: 1024px) {
+      body {
+        overflow: unset;
+      }
+      body::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        border-radius: 0;
+      }
+      body::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      body::-webkit-scrollbar-thumb {
+        background: var(--scroll-bar-thumb);
+        border-radius: var(--default-radius);
+      }
+      body::-webkit-scrollbar-thumb:hover {
+        background: var(--scroll-bar-thumb-hover);
+      }
+      body::-webkit-scrollbar-thumb:active {
+        background: var(--scroll-bar-thumb-hover);
+      }
+    }
+    @media screen and (max-width: 1024px) and (max-width: 1024px) {
+      body::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+    *, *:focus, *:hover {
+      outline: none;
+    }
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <pro-root>
+    <div class="w-load-wrap">
+      <svg class="w-ring-container" viewBox="30 30 60 60" height="60" width="60">
+        <circle class="w-ring-track" cx="60" cy="60" r="28" stroke-width="4px" fill="none"/>
+        <circle class="w-ring-car" cx="60" cy="60" r="28" pathLength="100" stroke-width="4px" fill="none"/>
+      </svg>
+    </div>
+  </pro-root>
+  <noscript>
+    Please enable JavaScript to continue using this application.
+  </noscript>
+  <script>
+    const wrapper = document.querySelector(".w-load-wrap");
+    const mainElement = document.getElementById("main");
+    function isLocalStorageEnabled() {
+      try {
+        localStorage.setItem("testKey", "testValue");
+        localStorage.removeItem("testKey");
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    if (isLocalStorageEnabled()) {
+      let theme = localStorage.getItem("theme");
+      if (theme === 'auto' || !theme) {
+        theme = window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      mainElement.classList.add(theme);
+    } else {
+      wrapper.innerHTML = "<p>Error: Please enable cookies in your browser settings to continue.</p>";
+    }
+  </script>
+</body>
+</html>
