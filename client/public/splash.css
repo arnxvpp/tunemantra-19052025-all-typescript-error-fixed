@@ -1,0 +1,45 @@
+.w-load-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color, #000000);
+}
+
+.w-ring-container {
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+}
+
+.w-ring-track {
+  stroke: var(--border, rgba(255, 255, 255, 0.1));
+}
+
+.w-ring-car {
+  stroke: var(--primary, #0198DD);
+  stroke-dasharray: 100;
+  stroke-dashoffset: 50;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  50% {
+    stroke-dashoffset: 50;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
