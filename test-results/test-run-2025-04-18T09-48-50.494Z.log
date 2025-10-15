@@ -1,0 +1,17 @@
+Test Run Started: 2025-04-18T09:48:50.494Z
+
+[2025-04-18T09:48:50.494Z] Test framework initialized
+[2025-04-18T09:48:50.494Z] Starting test suite: Ownership Verification Tests
+[2025-04-18T09:48:50.495Z] Test: Verify correct owner - PASS (0.1815000000000282ms)
+[2025-04-18T09:48:50.495Z] Test: Verify incorrect owner - PASS (0.10860000000002401ms)
+[2025-04-18T09:48:50.496Z] Test: Verify with signature - PASS (0.10439999999999827ms)
+[2025-04-18T09:48:50.496Z] Test: Verify non-existent token - PASS (0.06529999999997926ms)
+[2025-04-18T09:48:50.496Z] Ending test suite: Ownership Verification Tests
+[2025-04-18T09:48:50.496Z] Results: 4/4 tests passed
+[2025-04-18T09:48:50.497Z] Duration: 2ms
+[2025-04-18T09:48:50.497Z] 
+=== TEST SUMMARY ===
+[2025-04-18T09:48:50.497Z] Suites: 1/1 passed
+[2025-04-18T09:48:50.497Z] Tests: 4/4 passed
+[2025-04-18T09:48:50.498Z] Total Duration: 3ms
+[2025-04-18T09:48:50.498Z] Overall Result: PASSED

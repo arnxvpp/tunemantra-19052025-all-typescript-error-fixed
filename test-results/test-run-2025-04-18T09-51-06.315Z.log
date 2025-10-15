@@ -1,0 +1,16 @@
+Test Run Started: 2025-04-18T09:51:06.315Z
+
+[2025-04-18T09:51:06.316Z] Test framework initialized
+[2025-04-18T09:51:06.316Z] Starting test suite: NFT Minting Tests
+[2025-04-18T09:51:06.317Z] Test: Mint NFT with minimal valid parameters - PASS (0.33310000000000173ms)
+[2025-04-18T09:51:06.317Z] Test: Mint NFT with complex metadata - PASS (0.29869999999999663ms)
+[2025-04-18T09:51:06.318Z] Test: Mint NFT with specified chain ID - PASS (0.18269999999995434ms)
+[2025-04-18T09:51:06.318Z] Ending test suite: NFT Minting Tests
+[2025-04-18T09:51:06.319Z] Results: 3/3 tests passed
+[2025-04-18T09:51:06.319Z] Duration: 2ms
+[2025-04-18T09:51:06.320Z] 
+=== TEST SUMMARY ===
+[2025-04-18T09:51:06.320Z] Suites: 1/1 passed
+[2025-04-18T09:51:06.320Z] Tests: 3/3 passed
+[2025-04-18T09:51:06.320Z] Total Duration: 5ms
+[2025-04-18T09:51:06.321Z] Overall Result: PASSED
