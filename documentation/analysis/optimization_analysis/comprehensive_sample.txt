@@ -1,0 +1,100 @@
+# TuneMantra: Comprehensive Documentation
+
+*A blockchain-powered music distribution platform revolutionizing artist empowerment through intelligent rights management and comprehensive content delivery systems.*
+
+## Table of Contents
+
+- [1. Project Overview](#1.-project-overview)
+- [2. System Architecture](#2.-system-architecture)
+- [3. Blockchain Technology](#3.-blockchain-technology)
+- [4. Rights Management](#4.-rights-management)
+- [5. Database Schema](#5.-database-schema)
+- [6. API Reference](#6.-api-reference)
+- [7. User Guides](#7.-user-guides)
+- [8. Administration](#8.-administration)
+- [9. Development](#9.-development)
+- [10. Integrations](#10.-integrations)
+- [11. Analytics & Reporting](#11.-analytics-and-reporting)
+- [12. Distribution Systems](#12.-distribution-systems)
+- [13. AI & Machine Learning](#13.-ai-and-machine-learning)
+- [14. Security](#14.-security)
+- [15. Testing & Quality Assurance](#15.-testing-and-quality-assurance)
+- [16. Additional Documentation](#16.-additional-documentation)
+
+---
+
+# 1. Project Overview
+
+## Advanced Features Code Repository
+
+## Advanced Features Code Repository
+
+This directory contains extracted code for specialized features from various branches of the TuneMantra platform.
+
+### Feature Index
+
+#### [Audio Fingerprinting (ACR Cloud)](.archive/advanced_features/audio-fingerprinting)
+- Files: 11 (9 frontend, 2 backend)
+- Primary source: 17032025 branch
+- Audio content recognition, copyright detection, and sample identification using ACR Cloud
+
+#### [Blockchain Integration](.archive/advanced_features/blockchain)
+- Files: 88 (55 frontend, 33 backend)
+- Primary source: 17032025 branch
+- Smart contract-based royalty distribution, NFT minting, and decentralized payments
+
+#### [AI/Machine Learning](.archive/advanced_features/ai-ml)
+- Files: 437 (296 frontend, 141 backend)
+- Primary source: 17032025 branch
+- AI-powered metadata enhancement, content recommendations, and performance prediction
+
+#### [Rights Management](.archive/advanced_features/rights-management)
+- Files: 60 (43 frontend, 17 backend)
+- Primary source: 17032025 branch
+- Conflict detection, collaborative rights management, and verification systems
+
+#### [Knowledge Graph Integration] (Planned)
+- Primary source: 17032025 branch
+- Semantic music catalog relationships, entity visualization, and contextual search
+- *Note: Feature extraction pending*
+
+#### [Mobile Support] (Planned)
+- Primary source: 12march547 branch 
+- Mobile API endpoints, authentication, and offline functionality support
+- *Note: Feature extraction pending*
+
+#### [White Labeling] (Planned)
+- Primary source: 12march547 branch
+- Custom branding, theming system, domain customization, and email templates
+- *Note: Feature extraction pending*
+
+#### [Advanced Security] (Planned)
+- Primary source: 17032025 branch
+- Post-quantum cryptography, enhanced encryption, and security audit logging
+- *Note: Feature extraction pending*
+
+### Implementation Recommendations
+
+For guidance on implementing these features, refer to:
+- [Implementation Recommendations](../.archive/implementation_recommendations.md) - Analysis of implementation priorities
+- [Feature Catalog](../.archive/feature_catalog.md) - Comprehensive feature list
+- [Feature Matrix](../.archive/feature_matrix.md) - Feature availability by branch
+
+### Code Structure
+
+Each feature directory contains:
+
+- `frontend/`: UI components and client-side code
+- `backend/`: Server-side implementation
+- `shared/`: Shared types and utilities
+- `docs/`: Documentation related to the feature
+- `README.md`: Feature-specific documentation
+
+### Integration Notes
+
+When integrating these features:
+
+1. Review the README in each feature directory for implementation details
+2. Check for dependencies between features (e.g., Rights Management may depend on User Authentication)
+3. Follow the phased implementation approach from the Implementation Recommendations
+4. Ensure schema compatibility when integrating database models
