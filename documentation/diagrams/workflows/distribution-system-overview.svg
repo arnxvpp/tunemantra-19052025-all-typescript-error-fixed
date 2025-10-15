@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B7EA1"/>
+      <stop offset="100%" stop-color="#2D5D7B"/>
+    </linearGradient>
+    
+    <linearGradient id="contentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4F94BB"/>
+      <stop offset="100%" stop-color="#3B7EA1"/>
+    </linearGradient>
+    
+    <linearGradient id="processingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5CA3CB"/>
+      <stop offset="100%" stop-color="#4F94BB"/>
+    </linearGradient>
+    
+    <linearGradient id="deliveryGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#69B2DB"/>
+      <stop offset="100%" stop-color="#5CA3CB"/>
+    </linearGradient>
+    
+    <linearGradient id="monitoringGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#76C1EB"/>
+      <stop offset="100%" stop-color="#69B2DB"/>
+    </linearGradient>
+    
+    <linearGradient id="platformGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#566573"/>
+      <stop offset="100%" stop-color="#2C3E50"/>
+    </linearGradient>
+    
+    <linearGradient id="componentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowMarker" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B7EA1"/>
+    </marker>
+    
+    <marker id="arrowMarkerDark" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2C3E50"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <rect x="50" y="30" width="1100" height="70" rx="10" ry="10" fill="url(#headerGradient)"/>
+  <text x="600" y="72" font-family="Arial" font-size="28" text-anchor="middle" font-weight="bold" fill="white">TuneMantra Distribution System Overview</text>
+  
+  <!-- Content Management Section -->
+  <rect x="50" y="120" width="250" height="680" rx="10" ry="10" fill="url(#contentGradient)"/>
+  <text x="175" y="150" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="white">Content Management</text>
+  
+  <!-- Content Management Components -->
+  <rect x="75" y="180" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="175" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Release Management</text>
+  <text x="175" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Metadata, Assets, Status</text>
+  
+  <rect x="75" y="280" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="175" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Asset Storage</text>
+  <text x="175" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Audio, Images, Metadata</text>
+  
+  <rect x="75" y="380" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="175" y="410" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Validation Engine</text>
+  <text x="175" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Format, Quality, Metadata</text>
+  
+  <rect x="75" y="480" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="175" y="510" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Rights Management</text>
+  <text x="175" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Ownership, Territories</text>
+  
+  <rect x="75" y="580" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="175" y="610" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Schedule Manager</text>
+  <text x="175" y="635" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Release Timing, Deadlines</text>
+  
+  <rect x="75" y="680" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="175" y="710" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Takedown Manager</text>
+  <text x="175" y="735" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Removals, Territory Changes</text>
+  
+  <!-- Content Processing Section -->
+  <rect x="320" y="120" width="250" height="680" rx="10" ry="10" fill="url(#processingGradient)"/>
+  <text x="445" y="150" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="white">Content Processing</text>
+  
+  <!-- Content Processing Components -->
+  <rect x="345" y="180" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="445" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Distribution Orchestrator</text>
+  <text x="445" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Workflow Management</text>
+  
+  <rect x="345" y="280" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="445" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Content Processor</text>
+  <text x="445" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Format Conversion, Encoding</text>
+  
+  <rect x="345" y="380" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="445" y="410" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Metadata Transformer</text>
+  <text x="445" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Schema Conversion</text>
+  
+  <rect x="345" y="480" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="445" y="510" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Quality Control</text>
+  <text x="445" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Testing, Verification</text>
+  
+  <rect x="345" y="580" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="445" y="610" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Packaging Engine</text>
+  <text x="445" y="635" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Bundle Creation</text>
+  
+  <rect x="345" y="680" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="445" y="710" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Error Handling</text>
+  <text x="445" y="735" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Recovery, Retry Logic</text>
+  
+  <!-- Distribution Delivery Section -->
+  <rect x="590" y="120" width="250" height="680" rx="10" ry="10" fill="url(#deliveryGradient)"/>
+  <text x="715" y="150" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="white">Distribution Delivery</text>
+  
+  <!-- Distribution Delivery Components -->
+  <rect x="615" y="180" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="715" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Platform Adapter Manager</text>
+  <text x="715" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Connection Management</text>
+  
+  <rect x="615" y="280" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="715" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">API Integration</text>
+  <text x="715" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">REST, SOAP, Custom APIs</text>
+  
+  <rect x="615" y="380" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="715" y="410" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">File Transfer System</text>
+  <text x="715" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">SFTP, S3, Direct Upload</text>
+  
+  <rect x="615" y="480" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="715" y="510" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Delivery Scheduler</text>
+  <text x="715" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Timing, Prioritization</text>
+  
+  <rect x="615" y="580" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="715" y="610" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Authentication Service</text>
+  <text x="715" y="635" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Credentials, Token Mgmt</text>
+  
+  <rect x="615" y="680" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="715" y="710" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Takedown Service</text>
+  <text x="715" y="735" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Content Removal</text>
+  
+  <!-- Monitoring and Reporting Section -->
+  <rect x="860" y="120" width="250" height="320" rx="10" ry="10" fill="url(#monitoringGradient)"/>
+  <text x="985" y="150" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="white">Monitoring & Reporting</text>
+  
+  <!-- Monitoring and Reporting Components -->
+  <rect x="885" y="180" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="985" y="210" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Status Tracker</text>
+  <text x="985" y="235" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Real-time Monitoring</text>
+  
+  <rect x="885" y="280" width="200" height="80" rx="8" ry="8" fill="url(#componentGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="985" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Notification Service</text>
+  <text x="985" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Alerts, Updates</text>
+  
+  <!-- Digital Service Providers Section -->
+  <rect x="860" y="460" width="250" height="340" rx="10" ry="10" fill="url(#platformGradient)"/>
+  <text x="985" y="490" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold" fill="white">Digital Service Providers</text>
+  
+  <!-- DSP Groups -->
+  <rect x="885" y="520" width="200" height="40" rx="8" ry="8" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1"/>
+  <text x="985" y="545" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Streaming Services</text>
+  
+  <rect x="885" y="570" width="95" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+  <text x="932" y="590" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Spotify</text>
+  
+  <rect x="990" y="570" width="95" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+  <text x="1037" y="590" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Apple Music</text>
+  
+  <rect x="885" y="610" width="95" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+  <text x="932" y="630" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Amazon Music</text>
+  
+  <rect x="990" y="610" width="95" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+  <text x="1037" y="630" font-family="Arial" font-size="12" text-anchor="middle" fill="white">TIDAL</text>
+  
+  <rect x="885" y="650" width="200" height="40" rx="8" ry="8" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1"/>
+  <text x="985" y="675" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Video Platforms</text>
+  
+  <rect x="885" y="700" width="95" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+  <text x="932" y="720" font-family="Arial" font-size="12" text-anchor="middle" fill="white">YouTube Music</text>
+  
+  <rect x="990" y="700" width="95" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-width="1"/>
+  <text x="1037" y="720" font-family="Arial" font-size="12" text-anchor="middle" fill="white">TikTok</text>
+  
+  <rect x="885" y="740" width="200" height="30" rx="5" ry="5" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1"/>
+  <text x="985" y="760" font-family="Arial" font-size="14" text-anchor="middle" fill="white">150+ Additional Platforms</text>
+  
+  <!-- Connection Lines - Left to Middle -->
+  <!-- Release Management to Orchestrator -->
+  <line x1="275" y1="220" x2="345" y2="220" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Asset Storage to Content Processor -->
+  <line x1="275" y1="320" x2="345" y2="320" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Validation Engine to Metadata Transformer -->
+  <line x1="275" y1="420" x2="345" y2="420" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Rights Management to Quality Control -->
+  <line x1="275" y1="520" x2="345" y2="520" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Schedule Manager to Packaging Engine -->
+  <line x1="275" y1="620" x2="345" y2="620" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Takedown Manager to Error Handling -->
+  <line x1="275" y1="720" x2="345" y2="720" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Connection Lines - Middle to Right -->
+  <!-- Distribution Orchestrator to Platform Adapter Manager -->
+  <line x1="545" y1="220" x2="615" y2="220" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Content Processor to API Integration -->
+  <line x1="545" y1="320" x2="615" y2="320" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Metadata Transformer to File Transfer System -->
+  <line x1="545" y1="420" x2="615" y2="420" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Quality Control to Delivery Scheduler -->
+  <line x1="545" y1="520" x2="615" y2="520" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Packaging Engine to Authentication Service -->
+  <line x1="545" y1="620" x2="615" y2="620" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Error Handling to Takedown Service -->
+  <line x1="545" y1="720" x2="615" y2="720" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Connection Lines - Right to Far Right -->
+  <!-- Platform Adapter to Status Tracker -->
+  <line x1="815" y1="220" x2="885" y2="220" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- API Integration to Notification Service -->
+  <line x1="815" y1="320" x2="885" y2="320" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Delivery Services to DSPs -->
+  <path d="M 815,420 L 850,420 L 850,585 L 885,585" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)" fill="none"/>
+  <path d="M 815,520 L 850,520 L 850,635 L 885,635" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)" fill="none"/>
+  <path d="M 815,620 L 850,620 L 850,675 L 885,675" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)" fill="none"/>
+  <path d="M 815,720 L 850,720 L 850,755 L 885,755" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowMarker)" fill="none"/>
+  
+  <!-- DSPs to Monitoring -->
+  <path d="M 985,520 L 985,400 L 985,380" stroke="#2C3E50" stroke-width="2" marker-end="url(#arrowMarkerDark)" fill="none"/>
+  
+  <!-- Key Features Annotations -->
+  <rect x="880" y="370" width="210" height="60" rx="5" ry="5" fill="#E8F4F9" stroke="#3B7EA1" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="985" y="390" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">Real-time status updates from</text>
+  <text x="985" y="410" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">150+ platforms with normalized</text>
+  <text x="985" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">status tracking and reporting</text>
+  
+  <rect x="50" y="810" width="250" height="60" rx="5" ry="5" fill="#E8F4F9" stroke="#3B7EA1" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="175" y="830" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">Comprehensive content and</text>
+  <text x="175" y="850" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">rights management with territorial</text>
+  <text x="175" y="870" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">controls and release scheduling</text>
+  
+  <rect x="320" y="810" width="250" height="60" rx="5" ry="5" fill="#E8F4F9" stroke="#3B7EA1" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="445" y="830" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">Advanced content transformation</text>
+  <text x="445" y="850" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">with format conversion, metadata</text>
+  <text x="445" y="870" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">mapping and quality assurance</text>
+  
+  <rect x="590" y="810" width="250" height="60" rx="5" ry="5" fill="#E8F4F9" stroke="#3B7EA1" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="715" y="830" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">Multi-protocol delivery with</text>
+  <text x="715" y="850" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">platform-specific adapters and</text>
+  <text x="715" y="870" font-family="Arial" font-size="12" text-anchor="middle" fill="#2D5D7B" font-style="italic">secure authentication handling</text>
+  
+  <!-- Version Information -->
+  <text x="1150" y="890" font-family="Arial" font-size="12" text-anchor="end" fill="#555">v1.0.0 (2025-03-27)</text>
+</svg>

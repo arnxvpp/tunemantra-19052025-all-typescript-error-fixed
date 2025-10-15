@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B7EA1"/>
+      <stop offset="100%" stop-color="#2D5D7B"/>
+    </linearGradient>
+    
+    <linearGradient id="phaseGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4F94BB"/>
+      <stop offset="100%" stop-color="#3B7EA1"/>
+    </linearGradient>
+    
+    <linearGradient id="phaseGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5CA3CB"/>
+      <stop offset="100%" stop-color="#4F94BB"/>
+    </linearGradient>
+    
+    <linearGradient id="phaseGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#69B2DB"/>
+      <stop offset="100%" stop-color="#5CA3CB"/>
+    </linearGradient>
+    
+    <linearGradient id="phaseGradient4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#76C1EB"/>
+      <stop offset="100%" stop-color="#69B2DB"/>
+    </linearGradient>
+    
+    <linearGradient id="stepGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B7EA1"/>
+    </marker>
+    
+    <marker id="arrowheadWhite" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <rect x="50" y="30" width="1100" height="70" rx="10" ry="10" fill="url(#headerGradient)"/>
+  <text x="600" y="72" font-family="Arial" font-size="28" text-anchor="middle" font-weight="bold" fill="white">TuneMantra Royalty Management Flow</text>
+  
+  <!-- Phase 1: Revenue Collection -->
+  <rect x="50" y="130" width="1100" height="170" rx="10" ry="10" fill="url(#phaseGradient1)"/>
+  <text x="150" y="165" font-family="Arial" font-size="22" text-anchor="start" font-weight="bold" fill="white">Phase 1: Revenue Collection</text>
+  
+  <!-- Phase 1 Steps -->
+  <rect x="100" y="190" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="200" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Platform Data Ingestion</text>
+  <text x="200" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">150+ DSPs, Multiple Formats</text>
+  
+  <rect x="350" y="190" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="450" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Data Validation</text>
+  <text x="450" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Format Checking, Duplicate Detection</text>
+  
+  <rect x="600" y="190" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="700" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Data Normalization</text>
+  <text x="700" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Standardization, Field Mapping</text>
+  
+  <rect x="850" y="190" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="950" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Storage in Revenue DB</text>
+  <text x="950" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Structured Storage, Indexing</text>
+  
+  <!-- Phase 2: Royalty Calculation -->
+  <rect x="50" y="330" width="1100" height="170" rx="10" ry="10" fill="url(#phaseGradient2)"/>
+  <text x="150" y="365" font-family="Arial" font-size="22" text-anchor="start" font-weight="bold" fill="white">Phase 2: Royalty Calculation</text>
+  
+  <!-- Phase 2 Steps -->
+  <rect x="100" y="390" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="200" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Rights Data Retrieval</text>
+  <text x="200" y="445" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Ownership, Splits, Territories</text>
+  
+  <rect x="350" y="390" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="450" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Rate Application</text>
+  <text x="450" y="445" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Deal Terms, Tiered Rates</text>
+  
+  <rect x="600" y="390" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="700" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Split Calculation</text>
+  <text x="700" y="445" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Multi-level, Complex Hierarchies</text>
+  
+  <rect x="850" y="390" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="950" y="420" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Final Calculation</text>
+  <text x="950" y="445" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Currency Conversion, Deductions</text>
+  
+  <!-- Phase 3: Payment Processing -->
+  <rect x="50" y="530" width="1100" height="170" rx="10" ry="10" fill="url(#phaseGradient3)"/>
+  <text x="150" y="565" font-family="Arial" font-size="22" text-anchor="start" font-weight="bold" fill="white">Phase 3: Payment Processing</text>
+  
+  <!-- Phase 3 Steps -->
+  <rect x="100" y="590" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="200" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Payment Eligibility</text>
+  <text x="200" y="645" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Thresholds, Schedule Checking</text>
+  
+  <rect x="350" y="590" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="450" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Payment Preparation</text>
+  <text x="450" y="645" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Batching, Tax Calculation</text>
+  
+  <rect x="600" y="590" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="700" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Payment Approval</text>
+  <text x="700" y="645" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Multi-level Review, Authorization</text>
+  
+  <rect x="850" y="590" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="950" y="620" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Payment Execution</text>
+  <text x="950" y="645" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Multiple Payment Methods</text>
+  
+  <!-- Phase 4: Reporting -->
+  <rect x="50" y="730" width="1100" height="170" rx="10" ry="10" fill="url(#phaseGradient4)"/>
+  <text x="150" y="765" font-family="Arial" font-size="22" text-anchor="start" font-weight="bold" fill="white">Phase 4: Reporting and Analytics</text>
+  
+  <!-- Phase 4 Steps -->
+  <rect x="100" y="790" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="200" y="820" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Statement Generation</text>
+  <text x="200" y="845" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Multi-format, Detailed Breakdowns</text>
+  
+  <rect x="350" y="790" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="450" y="820" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Performance Analytics</text>
+  <text x="450" y="845" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Trends, Comparisons, Projections</text>
+  
+  <rect x="600" y="790" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="700" y="820" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Distribution Dashboard</text>
+  <text x="700" y="845" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Interactive Visualization, Filters</text>
+  
+  <rect x="850" y="790" width="200" height="80" rx="8" ry="8" fill="url(#stepGradient)" stroke="#3B7EA1" stroke-width="2"/>
+  <text x="950" y="820" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2D5D7B">Audit Trail</text>
+  <text x="950" y="845" font-family="Arial" font-size="12" text-anchor="middle" fill="#444">Complete Transaction History</text>
+  
+  <!-- Flow Arrows - Phase 1 -->
+  <line x1="300" y1="230" x2="350" y2="230" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="230" x2="600" y2="230" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="230" x2="850" y2="230" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Flow Arrows - Phase 2 -->
+  <line x1="300" y1="430" x2="350" y2="430" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="430" x2="600" y2="430" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="430" x2="850" y2="430" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Flow Arrows - Phase 3 -->
+  <line x1="300" y1="630" x2="350" y2="630" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="630" x2="600" y2="630" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="630" x2="850" y2="630" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Flow Arrows - Phase 4 -->
+  <line x1="300" y1="830" x2="350" y2="830" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="830" x2="600" y2="830" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="830" x2="850" y2="830" stroke="#3B7EA1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Phase Connectors -->
+  <line x1="950" y1="270" x2="950" y2="330" stroke="#3B7EA1" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="470" x2="950" y2="530" stroke="#3B7EA1" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowhead)"/>
+  <line x1="950" y1="670" x2="950" y2="730" stroke="#3B7EA1" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- External Inputs -->
+  <rect x="50" y="135" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="140" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Platform Revenue Reports</text>
+  <line x1="140" y1="165" x2="140" y2="190" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="50" y="335" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="140" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Rights &amp; Ownership Data</text>
+  <line x1="140" y1="365" x2="140" y2="390" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="50" y="535" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="140" y="555" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Payment Preferences</text>
+  <line x1="140" y1="565" x2="140" y2="590" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="50" y="735" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="140" y="755" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Report Templates</text>
+  <line x1="140" y1="765" x2="140" y2="790" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- External Outputs -->
+  <rect x="970" y="135" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="1060" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Validated Revenue Data</text>
+  <line x1="1060" y1="190" x2="1060" y2="165" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="970" y="335" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="1060" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Allocated Royalties</text>
+  <line x1="1060" y1="390" x2="1060" y2="365" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="970" y="535" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="1060" y="555" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Completed Payments</text>
+  <line x1="1060" y1="590" x2="1060" y2="565" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="970" y="735" width="180" height="30" rx="15" ry="15" fill="#2D5D7B" stroke="none"/>
+  <text x="1060" y="755" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Stakeholder Reports</text>
+  <line x1="1060" y1="790" x2="1060" y2="765" stroke="#2D5D7B" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Additional Notes -->
+  <text x="350" y="280" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Data from 150+ streaming platforms, stores, and services</text>
+  <text x="850" y="280" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Multiple file formats, structured and unstructured data</text>
+  
+  <text x="350" y="480" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Complex calculation engine with support for multiple rate models</text>
+  <text x="850" y="480" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Support for multi-level splits and territory-specific rules</text>
+  
+  <text x="350" y="680" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Configurable payment thresholds and schedules</text>
+  <text x="850" y="680" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Support for multiple payment methods and currencies</text>
+  
+  <text x="350" y="880" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Comprehensive analytics with historical comparisons</text>
+  <text x="850" y="880" font-family="Arial" font-size="11" text-anchor="middle" fill="#555" font-style="italic">Full transparency with complete audit history</text>
+  
+  <!-- Version Information -->
+  <text x="1150" y="890" font-family="Arial" font-size="12" text-anchor="end" fill="#555">v1.0.0 (2025-03-27)</text>
+</svg>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B7EA1"/>
+      <stop offset="100%" stop-color="#2D5D7B"/>
+    </linearGradient>
+    
+    <linearGradient id="presentationGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    
+    <linearGradient id="apiGatewayGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    
+    <linearGradient id="serviceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    
+    <linearGradient id="externalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6B7280"/>
+      <stop offset="100%" stop-color="#4B5563"/>
+    </linearGradient>
+    
+    <!-- Shadows -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Markers for connections -->
+    <marker id="arrowMarker" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748B"/>
+    </marker>
+    
+    <marker id="apiMarker" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EC4899"/>
+    </marker>
+    
+    <marker id="dataMarker" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+    
+    <marker id="eventMarker" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10B981"/>
+    </marker>
+    
+    <marker id="externalMarker" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#F8FAFC"/>
+  
+  <!-- Title -->
+  <rect x="50" y="30" width="1100" height="70" rx="10" ry="10" fill="url(#headerGradient)" filter="url(#dropShadow)"/>
+  <text x="600" y="75" font-family="Arial" font-size="28" text-anchor="middle" font-weight="bold" fill="white">TuneMantra System Architecture</text>
+  
+  <!-- External Systems -->
+  <rect x="50" y="150" width="200" height="350" rx="10" ry="10" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#dropShadow)"/>
+  <rect x="50" y="150" width="200" height="40" rx="10" ry="10" fill="url(#externalGradient)"/>
+  <text x="150" y="175" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">External Systems</text>
+  
+  <rect x="70" y="210" width="160" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="150" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Content Providers</text>
+  
+  <rect x="70" y="280" width="160" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="150" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Digital Service Providers</text>
+  
+  <rect x="70" y="350" width="160" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="150" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Payment Providers</text>
+  
+  <rect x="70" y="420" width="160" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="150" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Analytics Partners</text>
+  
+  <!-- Presentation Layer -->
+  <rect x="300" y="150" width="850" height="120" rx="10" ry="10" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#dropShadow)"/>
+  <rect x="300" y="150" width="850" height="40" rx="10" ry="10" fill="url(#presentationGradient)"/>
+  <text x="725" y="175" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">Presentation Layer</text>
+  
+  <rect x="320" y="200" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="410" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Web Application (React)</text>
+  
+  <rect x="520" y="200" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="610" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Mobile App (React Native)</text>
+  
+  <rect x="720" y="200" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="810" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Partner API Clients</text>
+  
+  <rect x="920" y="200" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1010" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Admin Portal</text>
+  
+  <!-- API Gateway Layer -->
+  <rect x="300" y="300" width="850" height="120" rx="10" ry="10" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#dropShadow)"/>
+  <rect x="300" y="300" width="850" height="40" rx="10" ry="10" fill="url(#apiGatewayGradient)"/>
+  <text x="725" y="325" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">API Gateway Layer</text>
+  
+  <rect x="320" y="350" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="410" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Authentication</text>
+  
+  <rect x="520" y="350" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="610" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Request Validation</text>
+  
+  <rect x="720" y="350" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="810" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Rate Limiting</text>
+  
+  <rect x="920" y="350" width="180" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1010" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Routing & Load Balancing</text>
+  
+  <!-- Service Layer -->
+  <rect x="300" y="450" width="850" height="400" rx="10" ry="10" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#dropShadow)"/>
+  <rect x="300" y="450" width="850" height="40" rx="10" ry="10" fill="url(#serviceGradient)"/>
+  <text x="725" y="475" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">Service Layer (Microservices)</text>
+  
+  <!-- Core Services -->
+  <rect x="320" y="500" width="390" height="160" rx="5" ry="5" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
+  <text x="515" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#166534">Core Services</text>
+  
+  <rect x="330" y="530" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="415" y="560" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">User & Organization</text>
+  
+  <rect x="330" y="590" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="415" y="620" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Catalog Services</text>
+  
+  <rect x="530" y="530" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="615" y="560" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Distribution Services</text>
+  
+  <rect x="530" y="590" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="615" y="620" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Rights & Royalty Mgmt</text>
+  
+  <!-- Financial Services -->
+  <rect x="740" y="500" width="390" height="160" rx="5" ry="5" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1"/>
+  <text x="935" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#065F46">Financial Services</text>
+  
+  <rect x="750" y="530" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="835" y="560" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Payment Services</text>
+  
+  <rect x="750" y="590" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="835" y="620" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Revenue Processing</text>
+  
+  <rect x="950" y="530" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1035" y="560" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Reporting Services</text>
+  
+  <rect x="950" y="590" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1035" y="620" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Tax Services</text>
+  
+  <!-- Supporting Services -->
+  <rect x="320" y="670" width="810" height="160" rx="5" ry="5" fill="#F0FDFA" stroke="#5EEAD4" stroke-width="1"/>
+  <text x="725" y="690" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#134E4A">Supporting Services</text>
+  
+  <rect x="330" y="700" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="415" y="730" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Analytics Services</text>
+  
+  <rect x="330" y="760" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="415" y="790" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Background Processing</text>
+  
+  <rect x="530" y="700" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="615" y="730" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Notification Services</text>
+  
+  <rect x="530" y="760" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="615" y="790" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Search Services</text>
+  
+  <rect x="730" y="700" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="815" y="730" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Authentication Services</text>
+  
+  <rect x="730" y="760" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="815" y="790" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Logging Services</text>
+  
+  <rect x="930" y="700" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1015" y="730" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Event Bus</text>
+  
+  <rect x="930" y="760" width="170" height="50" rx="5" ry="5" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1015" y="790" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">API Management</text>
+  
+  <!-- Data Layer -->
+  <rect x="300" y="880" width="850" height="160" rx="10" ry="10" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#dropShadow)"/>
+  <rect x="300" y="880" width="850" height="40" rx="10" ry="10" fill="url(#dataGradient)"/>
+  <text x="725" y="905" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">Data Layer</text>
+  
+  <rect x="320" y="930" width="190" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="415" y="960" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">PostgreSQL Database</text>
+  
+  <rect x="530" y="930" width="190" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="625" y="960" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Redis Cache</text>
+  
+  <rect x="740" y="930" width="190" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="835" y="960" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">S3 Object Storage</text>
+  
+  <rect x="950" y="930" width="190" height="50" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1045" y="960" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Elasticsearch</text>
+  
+  <!-- Infrastructure Layer -->
+  <rect x="300" y="1070" width="850" height="100" rx="10" ry="10" fill="white" stroke="#CBD5E1" stroke-width="2" filter="url(#dropShadow)"/>
+  <rect x="300" y="1070" width="850" height="40" rx="10" ry="10" fill="#64748B"/>
+  <text x="725" y="1095" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="white">Infrastructure Layer</text>
+  
+  <rect x="350" y="1120" width="170" height="40" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="435" y="1145" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">AWS (Primary)</text>
+  
+  <rect x="550" y="1120" width="170" height="40" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="635" y="1145" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Load Balancers</text>
+  
+  <rect x="750" y="1120" width="170" height="40" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="835" y="1145" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Kubernetes</text>
+  
+  <rect x="950" y="1120" width="170" height="40" rx="5" ry="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1035" y="1145" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">CI/CD Pipeline</text>
+  
+  <!-- Connections -->
+  <!-- External to Presentation -->
+  <path d="M 250 235 L 300 235" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#externalMarker)"/>
+  <path d="M 250 305 L 300 305" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#externalMarker)"/>
+  <path d="M 250 375 L 300 375" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#externalMarker)"/>
+  <path d="M 250 435 L 300 435" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#externalMarker)"/>
+  
+  <!-- Presentation to API Gateway -->
+  <path d="M 410 250 L 410 300" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#apiMarker)"/>
+  <path d="M 610 250 L 610 300" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#apiMarker)"/>
+  <path d="M 810 250 L 810 300" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#apiMarker)"/>
+  <path d="M 1010 250 L 1010 300" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#apiMarker)"/>
+  
+  <!-- API Gateway to Service Layer -->
+  <path d="M 725 420 L 725 450" stroke="#EC4899" stroke-width="2" fill="none" marker-end="url(#serviceMarker)"/>
+  
+  <!-- Service Layer Internal Connections -->
+  <path d="M 415 650 C 415 670, 520 670, 520 650" stroke="#10B981" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#eventMarker)"/>
+  <path d="M 615 650 C 615 670, 720 670, 720 650" stroke="#10B981" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#eventMarker)"/>
+  <path d="M 835 650 C 835 670, 935 670, 935 650" stroke="#10B981" stroke-width="2" stroke-dasharray="5,3" fill="none" marker-end="url(#eventMarker)"/>
+  
+  <!-- Service Layer to Data Layer -->
+  <path d="M 410 830 L 410 880" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#dataMarker)"/>
+  <path d="M 615 830 L 615 880" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#dataMarker)"/>
+  <path d="M 835 830 L 835 880" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#dataMarker)"/>
+  <path d="M 1015 830 L 1015 880" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#dataMarker)"/>
+  
+  <!-- Data Layer to Infrastructure -->
+  <path d="M 725 1040 L 725 1070" stroke="#F59E0B" stroke-width="2" fill="none" marker-end="url(#arrowMarker)"/>
+  
+  <!-- Legend -->
+  <rect x="950" y="510" width="200" height="30" rx="5" ry="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1050" y="530" font-family="Arial" font-size="14" text-anchor="middle" fill="#334155">Legend</text>
+  
+  <line x1="965" y1="550" x2="985" y2="550" stroke="#6366F1" stroke-width="2"/>
+  <text x="1050" y="555" font-family="Arial" font-size="12" text-anchor="start" fill="#334155">User Interface Flow</text>
+  
+  <line x1="965" y1="575" x2="985" y2="575" stroke="#EC4899" stroke-width="2"/>
+  <text x="1050" y="580" font-family="Arial" font-size="12" text-anchor="start" fill="#334155">API Requests</text>
+  
+  <line x1="965" y1="600" x2="985" y2="600" stroke="#10B981" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="1050" y="605" font-family="Arial" font-size="12" text-anchor="start" fill="#334155">Event-Driven Communication</text>
+  
+  <line x1="965" y1="625" x2="985" y2="625" stroke="#F59E0B" stroke-width="2"/>
+  <text x="1050" y="630" font-family="Arial" font-size="12" text-anchor="start" fill="#334155">Data Access</text>
+  
+  <line x1="965" y1="650" x2="985" y2="650" stroke="#6B7280" stroke-width="2"/>
+  <text x="1050" y="655" font-family="Arial" font-size="12" text-anchor="start" fill="#334155">External Integration</text>
+  
+  <!-- Version Info -->
+  <text x="1150" y="1180" font-family="Arial" font-size="12" text-anchor="end" fill="#64748B">v1.0.0 (2025-03-27)</text>
+</svg>
