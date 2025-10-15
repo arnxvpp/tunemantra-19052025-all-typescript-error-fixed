@@ -1,0 +1,127 @@
+:root {
+  /* Base colors */
+  --primary-50: #eef2ff;
+  --primary-100: #e0e7ff;
+  --primary-200: #c7d2fe;
+  --primary-300: #a5b4fc;
+  --primary-400: #818cf8;
+  --primary-500: #6366f1;
+  --primary-600: #4f46e5;
+  --primary-700: #4338ca;
+  --primary-800: #3730a3;
+  --primary-900: #312e81;
+  
+  /* Neutral colors */
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-500: #6b7280;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-800: #1f2937;
+  --neutral-900: #111827;
+  
+  /* Success, warning, error colors */
+  --success-50: #ecfdf5;
+  --success-100: #d1fae5;
+  --success-500: #10b981;
+  --success-600: #059669;
+  
+  --warning-50: #fffbeb;
+  --warning-100: #fef3c7;
+  --warning-500: #f59e0b;
+  --warning-600: #d97706;
+  
+  --error-50: #fef2f2;
+  --error-100: #fee2e2;
+  --error-500: #ef4444;
+  --error-600: #dc2626;
+  
+  /* Semantic colors - will be assigned in light/dark mode */
+  --background: var(--neutral-50);
+  --foreground: var(--neutral-900);
+  --muted: var(--neutral-100);
+  --muted-foreground: var(--neutral-500);
+  --border: var(--neutral-200);
+  --input: var(--neutral-200);
+  
+  /* Component-specific */
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --sidebar-bg: var(--background);
+  --sidebar-fg: var(--foreground);
+  --sidebar-muted: var(--neutral-600);
+  --sidebar-active: var(--primary-600);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  
+  /* Radius */
+  --radius-sm: 0.125rem;
+  --radius: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  
+  /* Layout */
+  --header-height: 4rem;
+  --sidebar-width: 16rem;
+  --sidebar-collapsed-width: 5rem;
+  --content-max-width: 1280px;
+  
+  /* Z-index */
+  --z-sidebar: 40;
+  --z-header: 30;
+  --z-overlay: 20;
+  --z-modal: 50;
+  --z-popover: 40;
+  --z-tooltip: 60;
+  
+  /* Animation */
+  --transition-fast: 0.15s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+.dark-theme {
+  --background: var(--neutral-900);
+  --foreground: var(--neutral-50);
+  --muted: var(--neutral-800);
+  --muted-foreground: var(--neutral-400);
+  --border: var(--neutral-700);
+  --input: var(--neutral-700);
+  
+  --card: var(--neutral-800);
+  --card-foreground: var(--neutral-100);
+  --popover: var(--neutral-800);
+  --popover-foreground: var(--neutral-100);
+  --sidebar-bg: var(--neutral-900);
+  --sidebar-fg: var(--neutral-100);
+  --sidebar-muted: var(--neutral-400);
+  
+  /* Adjust shadows for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+}
