@@ -1,0 +1,41 @@
+import React from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import { MetadataExportComponent } from "@/components/export/MetadataExportComponent";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+
+export default function BulkDistributionExportPage() {
+  return (
+    <div className="container mx-auto py-6 space-y-6">
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/catalog">Catalog</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/catalog/bulk-distribution-export">Distribution Export</BreadcrumbLink>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+      
+      <div className="flex justify-between items-center">
+        <h1 className="text-3xl font-bold tracking-tight">Bulk Distribution Export</h1>
+      </div>
+      
+      <p className="text-muted-foreground">
+        Export metadata for multiple releases to distribution platforms at once.
+      </p>
+      
+      <Card>
+        <CardContent className="pt-6">
+          <MetadataExportComponent 
+            mode="batch"
+            defaultExportFormat="csv"
+            showDateFilter={true}
+            showDistributorFilter={true}
+          />
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
